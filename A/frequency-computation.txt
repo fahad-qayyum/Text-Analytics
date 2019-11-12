@@ -1,0 +1,10 @@
+Modifying UNIGRAM:
+	The mapper will have a variable say "counter" which will add 1 upon each unigram encounter and hence when all the unigram are mapped this "counter" variable will contain all the unigrams in the document. We can pass this info as lets say the last line of the mapper e.g. "print(counter)". This value after sort will appear as the top one when passed to reducer. Reducer can extract this value and do the job as usual with the only exception of print statement which would be now "print('%s\t%s' % (current_word, (current_count/total_counts) * 100))". This will give us the percentage frequency of all the words in the document.
+
+Modifying BIGRAM:
+	Just like we modified the mapper and reducer above, we will do the same for the mapper and reducer of the bigram as well.
+
+Modifying TRIGRAM:
+	Just like we modified the mapper and reducer above, we will do the same for the mapper and reducer of the trigram as well.
+
+  
